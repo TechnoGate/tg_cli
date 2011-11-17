@@ -4,7 +4,6 @@ require 'rspec'
 require 'tg_cli'
 
 include TechnoGate
-include TgCli
 
 RSpec.configure do |config|
   def config.escaped_path(*parts)

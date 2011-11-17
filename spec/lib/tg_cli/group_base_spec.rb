@@ -1,6 +1,8 @@
 require 'spec_helper'
 
-describe GroupBase do
+module TgCli
+  describe GroupBase do
 
-  subject { GroupBase }
+    subject { GroupBase }
+  end
 end
