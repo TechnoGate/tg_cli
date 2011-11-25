@@ -1,3 +1,5 @@
+# -*- encoding: utf-8 -*-
+
 require 'thor'
 
 module TechnoGate
@@ -50,6 +52,11 @@ module TechnoGate
           # Alises are defined for this command, so properly alias the
           # newly defined method/subcommand:
           map opts[:alias] => name
+        end
+
+        if opts[:default]
+          # This command is to be set as the default task.
+          default_task name
         end
       end
     end
