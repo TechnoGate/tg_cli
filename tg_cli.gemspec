@@ -20,12 +20,13 @@ Gem::Specification.new do |s|
   # Run-time dependencies
   ####
 
+
   # Bundler
-  s.add_dependency 'bundler', '~>1.0.0'
+  s.add_dependency 'bundler', '>=1.0.0'
 
   # Thor
   s.add_dependency 'thor', '~>0.14.6'
-  
+
   ####
   # Development dependencies
   ####
@@ -47,6 +48,9 @@ Gem::Specification.new do |s|
 
   # Mocha
   s.add_development_dependency 'mocha', '~>0.10.0'
+
+  # Rake
+  s.add_development_dependency 'rake'
 
   ####
   # Debugging
