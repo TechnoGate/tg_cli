@@ -94,6 +94,11 @@ module TechnoGate
       def self.extract_name_from_usage(usage)
         /^([-_a-zA-Z0-9]+)(\s+(.+?))?$/.match(usage).to_a[1]
       end
+
+      # Call the help method of the main clas
+      def help
+        Main.help self
+      end
     end
   end
 end

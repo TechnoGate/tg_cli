@@ -13,5 +13,13 @@ module TgCli
         subject.send(:extract_name_from_usage, "ssh-config").should == "ssh-config"
       end
     end
+
+    context "Printing the help" do
+      base = Base.new
+
+      Main.expects(:help).with(base).once
+
+      base.send :help
+    end
   end
 end
