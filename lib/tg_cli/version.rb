@@ -2,7 +2,7 @@ module TechnoGate
   module TgCli
     MAJOR = 0
     MINOR = 0
-    TINY = 3
+    TINY = 4
     PRE = ''
 
     def self.version
